@@ -9,18 +9,24 @@
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
       },
       "alias": {
-        "extensions": [".js"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
         "map": [["@", "."]]
+      },
+      "react": {
+        "version": "detect"
       }
     }
   },
   "extends": [
+    "airbnb",
     "prettier",
     "prettier/react",
+    "prettier/@typescript-eslint",
+    "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
-    "airbnb"
+    "plugin:prettier/recommended"
   ],
-  "parser": "babel-eslint",
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -39,7 +45,10 @@
       }
     ],
     "react/prop-types": "off",
-    "react/state-in-constructor": "off"
+    "react/state-in-constructor": "off",
+    // https: //stackoverflow.com/a/64024916/8217707
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"]
   },
   "ignorePatterns": ["node_modules", "build", "out", ".next"]
 }
