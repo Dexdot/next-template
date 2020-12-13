@@ -13,7 +13,7 @@
     ]
   },
   "scripts": {
-    "d": "next dev",
+    "d": "export BUILD_ENV=development && next dev",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -27,7 +27,8 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-redux": "^7.2.2",
-    "redux": "^4.0.5"
+    "redux": "^4.0.5",
+    "sass": "^1.30.0"
   },
   "devDependencies": {
     "@types/node": "^14.14.11",
