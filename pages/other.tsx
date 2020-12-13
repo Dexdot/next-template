@@ -1,6 +1,6 @@
 import React from 'react';
-import Head from 'next/head';
 import Link from 'next/link';
+import { Head } from '@/components/Head';
 import { useSelector } from 'react-redux';
 
 export default function Other(): JSX.Element {
@@ -10,10 +10,7 @@ export default function Other(): JSX.Element {
 
   return (
     <>
-      <Head>
-        <title>Other</title>
-      </Head>
-
+      <Head title="Other page" />
       <h2>This is H2</h2>
 
       <Link href="/">

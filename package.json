@@ -21,6 +21,7 @@
     "lintfix": "npx eslint '**/*.{js,jsx}' --fix"
   },
   "dependencies": {
+    "@moxy/next-layout": "^2.2.2",
     "@reduxjs/toolkit": "^1.5.0",
     "next": "10.0.3",
     "next-images": "^1.6.2",

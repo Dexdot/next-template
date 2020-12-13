@@ -1,6 +1,6 @@
 import React from 'react';
-import Head from 'next/head';
 import Link from 'next/link';
+import { Head } from '@/components/Head';
 import { useDispatch } from 'react-redux';
 import { setExample } from '@/store/example';
 
@@ -19,15 +19,11 @@ export default function Home(): JSX.Element {
 
   return (
     <>
-      <Head>
-        <title>Home</title>
-      </Head>
+      <Head title="Home page" />
       <h1>This is H1</h1>
-
       <Link href="/other">
         <a href="/other">Go to other page</a>
       </Link>
-
       <button type="button" onClick={onClick}>
         Dispatch
       </button>
