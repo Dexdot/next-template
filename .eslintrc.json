@@ -46,9 +46,20 @@
     ],
     "react/prop-types": "off",
     "react/state-in-constructor": "off",
-    // https: //stackoverflow.com/a/64024916/8217707
+    // https://stackoverflow.com/a/64024916/8217707
     "no-use-before-define": "off",
-    "@typescript-eslint/no-use-before-define": ["error"]
+    "@typescript-eslint/no-use-before-define": ["error"],
+    // https://stackoverflow.com/a/59268871/8217707
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ]
   },
   "ignorePatterns": ["node_modules", "build", "out", ".next"]
 }
